@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="icon" href="zomato_logo.png">
+    <style>
+        #i1{
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+        #i2{
+            padding-left: 50px;
+            margin-top: 10px;
+        }
+        h1{
+            text-shadow: 4px 4px 5px rgb(174, 121, 82);
+        }
+        #f1{
+            background-color: aliceblue;
+        }
+        fieldset{
+            border: 2px solid violet;
+            width: 1400px;
+            height: 340px;
+        }
+        legend{
+            font-size: 30px;
+            color:chocolate;
+        }
+
+    </style>
+</head>
+<body>
+    <form id="f1" action="thankyou_signin.html">
+    <img id="i1" src="zomato_logo.png" alt="zomato logo"
+    width="200"
+    height="150"/>
+    <img id="i2" src="icecream.png" alt="zomato logo"
+    width="1080"
+    height="230"/><br><br>
+        <form id="f2" action="thankyou_signin.html">
+            <fieldset>
+        <h1>Sign In</h1>
+        <legend>Details</legend>
+                <label for="fname">First Name</label>&nbsp;&nbsp;
+                <input type="text" id="fname" placeholder="sushmitha" pattern="[A-Za-z]{3,15}"><br><br>
+                <label for="lname">Last Name</label>&nbsp;&nbsp;
+                <input type="text" id="lname" required placeholder="r"><br><br>
+                <label for="dob">Date Of Birth</label>&nbsp;&nbsp;
+                <input type="date" id="dob" required placeholder="mm/dd/yyyy"><br><br>
+                <label for="email">Email</label>&nbsp;&nbsp;
+                <input type="email" id="email" required placeholder="example@gmail.com" pattern="[a-z0-9_.]+@[a-z]+.[a-z]{2,}"><br><br>
+                <label for="phone">Contact Number</label>&nbsp;&nbsp;
+                <input type="text" id="phone" required pattern="[6-9]{1}[0-9]{9}"><br><br>
+            </fieldset><br><br>
+            <input type="submit"><br>
+        </form>
+    </form>
+</body>
+</html>

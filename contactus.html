@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="zomato_logo.png">
+    <style>
+        fieldset{
+            border:2px solid darkslateblue;
+        }
+        #z1{
+            background-color: blanchedalmond;
+        }
+        legend{
+            font-size: 30px;
+            color:palevioletred;
+        }
+        button:hover{
+            background-color:palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <form id="z1" action="submit.html">
+    <img src="black_logo_zomato.png" alt="black logo"
+    width="200"
+    height="50"/><br><br>
+    <img src="contactus.png" alt="contact us"
+    width="1450"
+    height="300/"><br><br><br>
+        
+        <form action="submit.html">
+        <fieldset>
+            <legend>Feedback</legend>
+        <label for="contact">How can we help you?</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input list="contact" size="40" required placeholder="Need help?">
+        <datalist id="contact">
+            <option>I need help with my Zomato online order.</option>
+            <option>I found incorrect/outdated information on a page.</option>
+            <option>I would like to give feedback/suggetions.</option>
+            <option>I need some help with my blog.</option>
+            <option>There is a photo/review that is bothering me and I would like to report it.</option>
+            <option>The website/app are not working the way they should.</option>
+        </datalist><br><br>
+        <label for="name">Full Name</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="name" size="40" required placeholder="name" pattern="[A-Za-z]{15,10}"><br><br>
+        <label for="email">Email address</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" id="email" size="40" required placeholder="example@gmail.com" pattern="[a-z0-9_.]+@[a-z]+.[a-z]{2,}"><br><br>
+        <label for="phone">Mobile Number</label>&nbsp;&nbsp;&nbsp;
+        <input type="text" id="phone" size="40" required pattern="[6-9]{1}[0-9]{9}"><br><br>
+        <input type="text" size="60" required placeholder="type text"><br><br>
+        <a href="submit.html">
+        <button>Submit Feedback</button>
+        </fieldset>
+        </form><br>
+        </a>
+    </form>
+</body>
+</html>
